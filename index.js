@@ -32,7 +32,7 @@ if(timeDifference <= 0){
     days=0;
     hours=0;
     minutes=0;
-    seconds=5;
+    seconds=10;
 }
 
 countdownElement.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
