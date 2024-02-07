@@ -56,7 +56,7 @@ function countdown(){
     if(done == true) return;
 
     if(!counting){
-        let deadline2 = new Date('February 14, 2024 22:00:00');
+        let deadline2 = new Date('February 3, 2024 22:00:00');
         let start2 = Date.now();
         let timeDifference2 = deadline2 - start2;
         days = zeroPad(Math.floor(timeDifference2 / (1000 * 60 * 60 * 24)));
