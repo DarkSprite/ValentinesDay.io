@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valentines Day</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="icon" href="heart_favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style = "display: flex;align-items: center;justify-content: center;height: 100vh;margin: 0;">
+        <div id="content" style = "display: flex;align-items: center;justify-content: center;height: 100vh;margin: 0;">
+            <div>
+                <img src="giphy.gif" alt="cat" class="gif" id="gif">
+            </div>
+            <div>
+                <h2 class="remaining" id="remaining">Time Remaining: </h2>
+            </div>
+            <div>
+                <h1 class="countdown" id="countdown">00:00:00:00</h1>
+            </div>
+        </div>
+        <div id="rotate" style="display: none;">
+            <div>
+                <img src="turnPhone.gif" alt="Turn Phone.">
+            </div>
+        </div>
+        <div id="questions" style = "display: flex;align-items: center;justify-content: center;height: 100vh;margin: 0; opacity: 0; transition: 3s;">
+            <h1 style="position: fixed; left: 43vw; top: 30vh; font-size: 1.3vw;">Will you be my Valentine?</h1>
+            <button style="position: fixed; left: 38vw; top: 40vh; width: 10vw; height: 4.5vh; background-color: rgb(149, 255, 140); font-size: 0.8vw;" class="button" onclick="yes()"><b>Yes</b></button>
+            <button id="no" style="position: fixed; left: 54vw; top: 40vh;width: 10vw; height: 4.5vh; background-color: rgb(255, 157, 157); font-size: 0.8vw;" class="button" onclick="no()"><b>No</b></button>
+        </div>
+        <div id="reply" style = "display: flex;align-items: center;justify-content: center;height: 100vh;margin: 0; opacity: 0; transition: 0.2s;">
+            <h1 style="position: fixed; left: 48vw; top: 35vh; font-size: 1.5vw;">Yay &lt;3</h1>
+            <img src="machiko-rabbit.gif" alt="Bunnos &lt;3" style="width: 12vw; position: fixed; top: 45vh; left: 44vw;">
+        </div>
+        <div style="position:fixed; left: 50vw; top: 50vh; width: 0vw; height: 0vh; background-color: black; transition: 0.5s;" id="black-screen">
+
+        </div>
+        <div id="borders" style="width:100vw;height: 100vh;position: fixed; transition: 0.2s; opacity: 1; pointer-events: none;">
+            <div style="width: 100%; height: 10vh; position: fixed; top: 90vh; background: linear-gradient(to top, #ffeafe, transparent);"></div>
+            <div style="width: 100%; height: 10vh; position: fixed; top: 0vh; background: linear-gradient(to bottom, #ffeafe, transparent);"></div>
+            <div style="height: 100%; width: 10vw; position: fixed; left: 0vw; background: linear-gradient(to right, #ffeafe, transparent);"></div>
+            <div style="height: 100%; width: 10vw; position: fixed; left: 90vw; background: linear-gradient(to left, #ffeafe, transparent);"></div>
+        </div>
+        <h1 id="bunnos"style="position: fixed; left: 49vw; top: 45vh; transition: 0.1s; opacity: 0; color:white;">Bunnos &lt;3</h1>
+        <script src="index.js"></script>
+    </body>
+</html>
