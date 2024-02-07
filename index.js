@@ -2,7 +2,7 @@ let countdownElement = document.getElementById("countdown");
 let remainingElement = document.getElementById("remaining");
 let gifElement = document.getElementById("gif");
 
-let deadline = new Date('February 14, 2024 22:00:00');
+let deadline = new Date('February 3, 2024 22:00:00');
 let start = Date.now();
 let correctOrientation = false;
 
